@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>A song of ice and fire</title>
+		<link rel="stylesheet" type="text/css" href="hoolime.css">
+	</head>
+
+	<body>
+		<h1 id="one">
+			Characters in Game of Thrones
+		</h1>
+		<div id="root">
+			<div class="container">
+			</div>
+
+		</div>
+		<script type="text/javascript" src="hoolime.js"></script>
+		<form action="https://www.anapioficeandfire.com/api/characters/2" method="GET">
+			<div class="new">
+			<label for="searchbycharacter">
+				<font color="purple">Search by Character</font>
+			</label>
+			<input id="searchbycharacter" type="text" placeholder="search by character"></input>
+			<input id="searchbycharacter" type="submit"></input>
+		</div>
+	</form>
+		<form action="/results" method="GET">
+		<div class="new">
+			<label for="searchbybook">
+				<font color="purple">Search by Book</font>
+			</label>
+			<input id="searchbybook" type="text" placeholder="search by book" name="search"></input>
+			<input id="searchbycharacter" type="submit"></input>
+		</div>
+		</form>
+		
+	</body>
+</html>
